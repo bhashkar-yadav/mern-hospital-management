@@ -26,7 +26,7 @@ const Login = () => {
     try {
       await axios
         .post(
-          "https://mern-stack-hospital-management-system-q3hr.onrender.com/api/v1/user/login",
+          "http://localhost:3000/api/v1/user/login",
           { email, password, confirmPassword, role: "Patient" },
           {
             withCredentials: true,
